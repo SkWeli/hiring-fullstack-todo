@@ -13,6 +13,7 @@ const FilterBar = ({ filter, setFilter, todos }) => {
 
   return (
     <div className="filter-bar">
+      <span className="filter-label">View</span>
       {FILTERS.map(({ key, label }) => (
         <button
           key={key}

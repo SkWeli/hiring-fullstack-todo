@@ -23,10 +23,7 @@ const TodoItem = ({ todo, onToggle, onEdit, onDelete }) => {
 
   if (editing) {
     return (
-      <motion.div
-        layout
-        className="todo-item editing"
-      >
+      <motion.div layout className="todo-item editing">
         <TodoForm
           initialValues={{ title: todo.title, description: todo.description }}
           onSubmit={handleEdit}
@@ -37,10 +34,7 @@ const TodoItem = ({ todo, onToggle, onEdit, onDelete }) => {
   }
 
   return (
-    <motion.div
-      layout
-      className={`todo-item ${todo.done ? 'done' : ''}`}
-    >
+    <motion.div layout className={`todo-item ${todo.done ? 'done' : ''}`}>
       <div className="todo-left">
         <button
           className={`checkbox ${todo.done ? 'checked' : ''}`}
@@ -66,14 +60,14 @@ const TodoItem = ({ todo, onToggle, onEdit, onDelete }) => {
           aria-label="Edit todo"
           disabled={todo.done}
         >
-          ✏️
+          Edit
         </button>
         <button
           className={`action-btn delete-btn ${confirmDelete ? 'confirming' : ''}`}
           onClick={handleDelete}
           aria-label={confirmDelete ? 'Click again to confirm delete' : 'Delete todo'}
         >
-          {confirmDelete ? 'Sure?' : '🗑️'}
+          {confirmDelete ? 'Sure?' : 'Delete'}
         </button>
       </div>
     </motion.div>

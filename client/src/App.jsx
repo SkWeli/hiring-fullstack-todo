@@ -18,8 +18,8 @@ const TodoApp = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1 className="app-title">My Todos</h1>
-        <p className="app-subtitle">Stay on top of your tasks</p>
+        <p className="app-eyebrow">Task management</p>
+        <h1 className="app-title">My <strong>Todos</strong></h1>
       </header>
 
       <main className="app-main">
@@ -55,8 +55,13 @@ const App = () => {
         toastOptions={{
           duration: 3000,
           style: {
-            borderRadius: '8px',
-            fontSize: '14px',
+            background: '#0E0E0C',
+            color: '#F7F6F2',
+            borderRadius: '6px',
+            fontSize: '13px',
+            fontFamily: "'DM Sans', system-ui, sans-serif",
+            fontWeight: '400',
+            padding: '10px 14px',
           },
         }}
       />
