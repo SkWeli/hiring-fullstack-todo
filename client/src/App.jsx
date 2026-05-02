@@ -19,7 +19,7 @@ const TodoApp = () => {
     <div className="app">
       <header className="app-header">
         <p className="app-eyebrow">Task management</p>
-        <h1 className="app-title">My <strong>Todos</strong></h1>
+        <h1 className="app-title">My <strong>TODOs</strong></h1>
       </header>
 
       <main className="app-main">

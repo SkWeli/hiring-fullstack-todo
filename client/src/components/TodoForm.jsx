@@ -92,7 +92,7 @@ const TodoForm = ({ onSubmit, initialValues = null, onCancel }) => {
           className="btn btn-primary"
           disabled={submitting}
         >
-          {submitting ? 'Saving...' : isEditing ? 'Save changes' : 'Add todo'}
+          {submitting ? 'Saving...' : isEditing ? 'Save changes' : 'ADD'}
         </button>
       </div>
     </form>
